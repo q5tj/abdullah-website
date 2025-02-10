@@ -50,7 +50,6 @@ header {
 }
 .hero {
   padding: 50px;
-  background: #ffffff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   margin: 20px;
@@ -98,4 +97,79 @@ footer {
   background: #041b29;
   color: #f3b545;
   text-align: center;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1024px) {
+  .nav-links {
+    gap: 60px;
+  }
+  .grid-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  /* Make the navigation menu stack vertically */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #041b29;
+    padding: 20px;
+    width: 200px;
+  }
+  .nav-links a {
+    color: #f3b545;
+    text-align: right;
+  }
+
+  /* Show the hamburger menu for mobile devices */
+  .hamburger-menu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .hero {
+    padding: 30px;
+  }
+
+  .profile-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .grid-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 10px;
+  }
+
+  .nav-links a {
+    font-size: 1em;
+    padding: 8px 12px;
+  }
+
+  .hero {
+    padding: 20px;
+  }
+
+  .social-icons a {
+    margin: 0 8px;
+    font-size: 20px;
+  }
+
+  .profile-img {
+    width: 100px;
+    height: 100px;
+  }
 }
