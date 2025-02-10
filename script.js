@@ -1,7 +1,16 @@
-function showTime() {
-	document.getElementById('currentTime').innerHTML = new Date().toUTCString();
+function updateTime() {
+    document.getElementById('currentTime').innerText = new Date().toLocaleTimeString();
 }
-showTime();
-setInterval(function () {
-	showTime();
-}, 1000);
+setInterval(updateTime, 1000);
+
+function toggleDarkMode() {
+    document.body.classList.toggle('dark-mode');
+}
+
+function toggleMenu() {
+    const nav = document.querySelector('.nav-links');
+    nav.classList.toggle('show');
+    document.querySelector('.hamburger-menu').classList.toggle('open');
+}
+
+AOS.init();

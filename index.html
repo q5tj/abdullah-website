@@ -1,25 +1,66 @@
 <!DOCTYPE html>
 <html lang="ar">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello, World!</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="container">
-      <h1>Abdullah AlBaharna</h1>
-      <h2>AMB DESIGNER</h2>
-      <h3>Welcome to my page</h3>
-      <div class="content">
-        <a href="https://linktr.ee/albaharnah1420" target="_blank" class="follow-link">Follow me</a>
-        <img src="https://media-mrs2-2.cdn.whatsapp.net/v/t61.24694-24/461513741_1055911866320072_3971902387011589295_n.jpg?ccb=11-4&oh=01_Q5AaIMIeyyFWJwYmTF82pMhgfM-4xhtMX-I6JafxqBySzi3e&oe=67AD9F71&_nc_sid=5e03e0&_nc_cat=104" alt="Profile Image" class="profile-img"/>
+    <title>Abdullah AlBaharna - Portfolio</title>
+    <meta name="description" content="Portfolio of Abdullah AlBaharna, a skilled designer and developer.">
+    <meta name="keywords" content="Portfolio, Abdullah AlBaharna, Design, Web Development">
+    <meta name="author" content="Abdullah AlBaharna">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+</head>
+<body>
+    <header>
+        <h1>Abdullah AlBaharna</h1>
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <nav class="nav-links">
+            <a href="#">الرئيسية</a>
+            <a href="#works">أعمالي</a>
+            <a href="#about">من أنا</a>
+        </nav>
+        <div>
+            <i class="fas fa-moon dark-mode-toggle" onclick="toggleDarkMode()"></i>
+        </div>
+    </header>
+    
+    <section class="hero" data-aos="fade-up">
+        <h2>AMB DESIGNER</h2>
+        <p>مرحبًا بكم في صفحتي الشخصية</p>
+        <img src="https://media-mrs2-2.cdn.whatsapp.net/v/t61.24694-24/461513741_1055911866320072_3971902387011589295_n.jpg?ccb=11-4&oh=01_Q5AaIMIeyyFWJwYmTF82pMhgfM-4xhtMX-I6JafxqBySzi3e&oe=67AD9F71&_nc_sid=5e03e0&_nc_cat=104" alt="Profile Image" class="profile-img">
+        <div class="social-icons">
+          <a href="https://t.me/PdcastwithAbdullah" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+          <a href="https://www.instagram.com/ambdesign1420?igsh=MXlmNGIwczd2Ymt2" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://soundcloud.com/pdcastwithabdullah" aria-label="SoundCloud"><i class="fab fa-soundcloud"></i></a>
+          <a href="https://www.snapchat.com/add/abood_qatif2019" aria-label="Snapchat"><i class="fab fa-snapchat"></i></a>
+          <a href="https://api.whatsapp.com/send?phone=966593496551" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
       </div>
-      <p id="currentTime"></p>
-    </div>
+      
+    </section>
+
+    <section id="works" class="grid-gallery">
+        <div data-aos="zoom-in">
+            <img src="ooo.PNG" alt="Work 1">
+        </div>
+        <div data-aos="zoom-in">
+            <img src="aml.PNG" alt="Work 2">
+        </div>
+        <div data-aos="zoom-in">
+            <img src="ggg.PNG" alt="Work 3">
+        </div>
+    </section>
+
+    <footer>
+        <p id="currentTime"></p>
+        <span>&copy; جميع الحقوق محفوظة 2025 | Abdullah AlBaharna</span>
+    </footer>
+
     <script src="script.js"></script>
-  </body>
-  <footer>
-    <span>جميع حقوق الطبع والنشر محفوظة</span>
-  </footer>
+</body>
 </html>
