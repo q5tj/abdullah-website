@@ -1,0 +1,89 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Background */
+body, html {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Full page background */
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('background-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Container for content */
+.about-container {
+    text-align: center;
+    background-color: rgb(37, 21, 21); /* Dark overlay */
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 100%;
+    color: #f3b545;
+    box-shadow: 0 4px 15px rgb(0, 0, 0);
+}
+
+/* Heading styles */
+.about-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Paragraph styles */
+.about-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #f3b545;
+    margin-bottom: 30px;
+}
+
+/* Hover effect on content */
+.about-container:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Add media query for mobile */
+@media (max-width: 768px) {
+    .about-container {
+        padding: 20px;
+    }
+
+    .about-content h1 {
+        font-size: 2rem;
+    }
+
+    .about-content p {
+        font-size: 1rem;
+    }
+}
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.about-content h1 {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: typing 3s steps(30) forwards;
+}
