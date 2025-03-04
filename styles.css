@@ -76,6 +76,16 @@ header {
 .social-icons a:hover {
   color: #f3b545;
 }
+
+/* جديد: تغيير الألوان في الوضع الداكن */
+body.dark-mode .social-icons a {
+  color: #f3b545;
+}
+
+body.dark-mode .social-icons a:hover {
+  color: #ffffff;
+}
+
 .grid-gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
