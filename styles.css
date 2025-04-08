@@ -99,6 +99,7 @@ header h1 {
   color: var(--text-color);
   font-weight: 500;
   position: relative;
+  font-family: 'Poppins', sans-serif; /* تم تغيير الخط هنا */
 }
 
 .nav-links a::after {
