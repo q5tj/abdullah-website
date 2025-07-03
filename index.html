@@ -11,21 +11,33 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="icon" type="image/png" href="logo-removebg-preview.png">
+
 </head>
 <body>
+    <!-- Floating Background Elements -->
+    <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+    </div>
+
     <header>
         <div class="header-container">
-            <h1>Abdullah AlBaharna</h1>
+            <div class="logo-container">
+                <h1>AMB DESIGNER</h1>
+                <span class="logo-subtitle">Abdullah AlBaharna</span>
+            </div>
             <div class="hamburger-menu" onclick="toggleMenu()">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
             </div>
             <nav class="nav-links">
-                <a href="https://forms.gle/QkCg6KbVcHXnXZ4n7">طلب تصميم</a>
+                <a href="contact.html" class="nav-cta">طلب تصميم</a>
                 <a href="#services">خدماتي</a>
                 <a href="#works">أعمالي</a>
-                <a href="#skills">مهاراتي</a>
                 <a href="#testimonials">آراء العملاء</a>
                 <a href="#contact">تواصل معي</a>
                 <a href="about.html" class="about1">من أنا</a>
@@ -37,220 +49,401 @@
     </header>
     
     <section class="hero" data-aos="fade-up">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
         <div class="hero-content">
-            <h2>AMB DESIGNER</h2>
-            <p>مرحبًا بكم في صفحتي الشخصية</p>
-            <img src="logo-removebg-preview.png" alt="Profile Image" class="profile-img">
-            <div class="hero-cta">
-                <a href="#contact" class="cta-button">تواصل معي</a>
-                <a href="#works" class="cta-button secondary">معرض أعمالي</a>
+            <div class="hero-badge" data-aos="zoom-in">
+                <i class="fas fa-star"></i>
+                <span>مصمم محترف</span>
             </div>
-            <div class="social-icons">
-                <a href="https://t.me/PdcastwithAbdullah" aria-label="Telegram" class="social-icon"><i class="fab fa-telegram"></i></a>
-                <a href="https://www.instagram.com/ambdesign1420?igsh=MXlmNGIwczd2Ymt2" aria-label="Instagram" class="social-icon"><i class="fab fa-instagram"></i></a>
-                <a href="https://soundcloud.com/pdcastwithabdullah" aria-label="SoundCloud" class="social-icon"><i class="fab fa-soundcloud"></i></a>
-                <a href="https://www.snapchat.com/add/abood_qatif2019" aria-label="Snapchat" class="social-icon"><i class="fab fa-snapchat"></i></a>
-                <a href="https://api.whatsapp.com/send?phone=966593496551" aria-label="WhatsApp" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+            <h2 data-aos="fade-up" data-aos-delay="200">AMB DESIGNER</h2>
+            <p data-aos="fade-up" data-aos-delay="300">مرحبًا بكم في صفحتي الشخصية</p>
+            <div class="profile-container" data-aos="zoom-in" data-aos-delay="400">
+                <img src="logo-removebg-preview.png" alt="Profile Image" class="profile-img">
+                <div class="profile-ring"></div>
+            </div>
+            <div class="hero-cta" data-aos="fade-up" data-aos-delay="500">
+                <a href="contact.html" class="cta-button primary-btn">
+                    <i class="fas fa-envelope"></i>
+                    تواصل معي
+                </a>
+                <a href="#works" class="cta-button secondary-btn">
+                    <i class="fas fa-eye"></i>
+                    معرض أعمالي
+                </a>
+            </div>
+                <div class="social-icons" data-aos="fade-up" data-aos-delay="600">
+                <a href="https://t.me/PdcastwithAbdullah" target="_blank" rel="noopener" aria-label="Telegram" class="social-icon telegram"><i class="fab fa-telegram"></i></a>
+                <a href="https://www.instagram.com/ambdesign1420?igsh=MXlmNGIwczd2Ymt2" target="_blank" rel="noopener" aria-label="Instagram" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.snapchat.com/add/abood_qatif2019" target="_blank" rel="noopener" aria-label="Snapchat" class="social-icon snapchat"><i class="fab fa-snapchat"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=966593496551" target="_blank" rel="noopener" aria-label="WhatsApp" class="social-icon whatsapp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
             </div>
         </div>
     </section>
 
     <section id="services" class="services-section" data-aos="fade-up">
-        <h2 class="section-title">خدماتي</h2>
+        <div class="section-header">
+            <span class="section-badge">ما أقدمه</span>
+            <h2 class="section-title">خدماتي</h2>
+            <p class="section-description">أقدم مجموعة شاملة من الخدمات التصميمية المتميزة</p>
+        </div>
         <div class="services-container">
             <div class="service-card" data-aos="zoom-in" data-aos-delay="100">
-                <div class="service-icon">
-                    <i class="fas fa-paint-brush"></i>
+                <div class="service-icon-wrapper">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
                 </div>
                 <h3>تصميم الشعارات</h3>
                 <p>تصميم شعارات فريدة ومميزة تعكس هوية علامتك التجارية وتجذب انتباه العملاء.</p>
+                <div class="service-features">
+                    <span class="feature-tag">إبداعي</span>
+                    <span class="feature-tag">احترافي</span>
+                </div>
             </div>
-            <div class="service-card" data-aos="zoom-in" data-aos-delay="200">
-                <div class="service-icon">
-                    <i class="fas fa-palette"></i>
+            <div class="service-card featured" data-aos="zoom-in" data-aos-delay="200">
+                <div class="featured-badge">الأكثر طلباً</div>
+                <div class="service-icon-wrapper">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
                 </div>
                 <h3>الهوية البصرية</h3>
                 <p>تطوير هوية بصرية متكاملة تشمل الألوان والخطوط والعناصر الرسومية التي تميز علامتك التجارية.</p>
+                <div class="service-features">
+                    <span class="feature-tag">متكامل</span>
+                    <span class="feature-tag">مميز</span>
+                </div>
             </div>
             <div class="service-card" data-aos="zoom-in" data-aos-delay="300">
-                <div class="service-icon">
-                    <i class="fas fa-print"></i>
+                <div class="service-icon-wrapper">
+                    <div class="service-icon">
+                        <i class="fas fa-print"></i>
+                    </div>
                 </div>
                 <h3>تصميم المطبوعات</h3>
                 <p>تصميم بطاقات العمل، البروشورات، المنشورات وجميع المواد المطبوعة بتصاميم عصرية وجذابة.</p>
+                <div class="service-features">
+                    <span class="feature-tag">عصري</span>
+                    <span class="feature-tag">جذاب</span>
+                </div>
             </div>
             <div class="service-card" data-aos="zoom-in" data-aos-delay="400">
-                <div class="service-icon">
-                    <i class="fas fa-mobile-alt"></i>
+                <div class="service-icon-wrapper">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
                 </div>
                 <h3>تصميم وسائل التواصل</h3>
                 <p>تصميم منشورات وقوالب لمنصات التواصل الاجتماعي تساعد في زيادة التفاعل وجذب المتابعين.</p>
+                <div class="service-features">
+                    <span class="feature-tag">تفاعلي</span>
+                    <span class="feature-tag">جذاب</span>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="works" class="works-section">
-        <h2 class="section-title" data-aos="fade-up">أعمالي</h2>
+        <div class="section-header">
+            <span class="section-badge">معرض الإبداع</span>
+            <h2 class="section-title" data-aos="fade-up">أعمالي</h2>
+            <p class="section-description">مجموعة مختارة من أفضل أعمالي التصميمية</p>
+        </div>
         <div class="portfolio-filter" data-aos="fade-up">
-            <button class="filter-btn active" data-filter="all">الكل</button>
-            <button class="filter-btn" data-filter="logo">الشعارات</button>
-            <button class="filter-btn" data-filter="identity">الهوية البصرية</button>
-            <button class="filter-btn" data-filter="print">المطبوعات</button>
+            <button class="filter-btn active" data-filter="all">
+                <i class="fas fa-th"></i>
+                الكل
+            </button>
+            <button class="filter-btn" data-filter="logo">
+                <i class="fas fa-star"></i>
+                الشعارات
+            </button>
+            <button class="filter-btn" data-filter="identity">
+                <i class="fas fa-palette"></i>
+                الهوية البصرية
+            </button>
+            <button class="filter-btn" data-filter="print">
+                <i class="fas fa-print"></i>
+                المطبوعات
+            </button>
         </div>
         <div class="grid-gallery">
             <div class="gallery-item" data-aos="zoom-in" data-category="logo">
-                <img src="ooo-removebg-preview.png" alt="Work 1">
+                <div class="gallery-image">
+                    <img src="ooo-removebg-preview.png" alt="Work 1">
+                </div>
                 <div class="overlay">
                     <div class="overlay-content">
+                        <div class="project-category">شعار</div>
                         <h3>تصميم شعار</h3>
+                        <div class="project-tags">
+                            <span class="tag">إبداعي</span>
+                            <span class="tag">حديث</span>
+                        </div>
+                        <button class="view-project">
+                            <i class="fas fa-eye"></i>
+                            عرض المشروع
+                        </button>
                     </div>
                 </div>
             </div>
             <div class="gallery-item" data-aos="zoom-in" data-category="identity">
-                <img src="m3rofff.PNG" alt="Work 2">
+                <div class="gallery-image">
+                    <img src="m3rofff.PNG" alt="Work 2">
+                </div>
                 <div class="overlay">
                     <div class="overlay-content">
+                        <div class="project-category">شهادة</div>
                         <h3>شهادة معروف</h3>
-                        <p>لضمان ثقتكم </p>
-                       
+                        <p>لضمان ثقتكم</p>
+                        <div class="project-tags">
+                            <span class="tag">موثق</span>
+                            <span class="tag">رسمي</span>
+                        </div>
+                        <button class="view-project">
+                            <i class="fas fa-eye"></i>
+                            عرض المشروع
+                        </button>
                     </div>
                 </div>
             </div>
             <div class="gallery-item" data-aos="zoom-in" data-category="logo">
-                <img src="card.jpeg" alt="Work 3">
+                <div class="gallery-image">
+                    <img src="card.jpeg" alt="Work 3">
+                </div>
                 <div class="overlay">
                     <div class="overlay-content">
+                        <div class="project-category">شعار</div>
                         <h3>تصميم شعار</h3>
+                        <div class="project-tags">
+                            <span class="tag">أنيق</span>
+                            <span class="tag">مميز</span>
+                        </div>
+                        <button class="view-project">
+                            <i class="fas fa-eye"></i>
+                            عرض المشروع
+                        </button>
                     </div>
                 </div>
             </div>
             <div class="gallery-item" data-aos="zoom-in" data-category="print">
-                <img src="food.jpeg" alt="Work 4">
+                <div class="gallery-image">
+                    <img src="food.jpeg" alt="Work 4">
+                </div>
                 <div class="overlay">
                     <div class="overlay-content">
+                        <div class="project-category">مطبوعات</div>
                         <h3>تصميم بروشور</h3>
                         <p>بروشور تعريفي</p>
+                        <div class="project-tags">
+                            <span class="tag">تسويقي</span>
+                            <span class="tag">جذاب</span>
+                        </div>
+                        <button class="view-project">
+                            <i class="fas fa-eye"></i>
+                            عرض المشروع
+                        </button>
                     </div>
                 </div>
             </div>
             <div class="gallery-item" data-aos="zoom-in" data-category="identity">
-                <img src="ggg-removebg-preview.png" alt="Work 5">
+                <div class="gallery-image">
+                    <img src="ggg-removebg-preview.png" alt="Work 5">
+                </div>
                 <div class="overlay">
                     <div class="overlay-content">
+                        <div class="project-category">هوية</div>
                         <h3>هوية بصرية</h3>
                         <p>هوية متكاملة لشركة</p>
+                        <div class="project-tags">
+                            <span class="tag">متكامل</span>
+                            <span class="tag">احترافي</span>
+                        </div>
+                        <button class="view-project">
+                            <i class="fas fa-eye"></i>
+                            عرض المشروع
+                        </button>
                     </div>
                 </div>
             </div>
             <div class="gallery-item" data-aos="zoom-in" data-category="print">
-                <img src="book.jpeg" alt="Work 6">
+                <div class="gallery-image">
+                    <img src="book.jpeg" alt="Work 6">
+                </div>
                 <div class="overlay">
                     <div class="overlay-content">
+                        <div class="project-category">مطبوعات</div>
                         <h3>تصميم كتيب</h3>
                         <p>تصميم غلاف</p>
+                        <div class="project-tags">
+                            <span class="tag">أدبي</span>
+                            <span class="tag">أنيق</span>
+                        </div>
+                        <button class="view-project">
+                            <i class="fas fa-eye"></i>
+                            عرض المشروع
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="text-center" data-aos="fade-up">
-            <a href="#" class="cta-button">عرض المزيد من الأعمال</a>
-        </div>
+        <!-- <div class="text-center" data-aos="fade-up">
+            <a href="#" class="cta-button primary-btn">
+                <i class="fas fa-plus"></i>
+                عرض المزيد من الأعمال
+            </a>
+        </div> -->
     </section>
 
     <section id="skills" class="skills-section" data-aos="fade-up">
-        <h2 class="section-title">مهاراتي</h2>
+        <div class="section-header">
+            <span class="section-badge">خبراتي</span>
+            <h2 class="section-title">مهاراتي</h2>
+            <p class="section-description">الأدوات والتقنيات التي أتقنها في عالم التصميم</p>
+        </div>
         <div class="skills-container">
-            <div class="skill-group">
-                <h3>برامج التصميم</h3>
-                <div class="skill-item">
-                    <span class="skill-name">Adobe Photoshop</span>
-                    <div class="skill-bar">
-                        <div class="skill-progress width-95"></div>
-                    </div>
-                    <span class="skill-percentage">95%</span>
+            <div class="skill-group" data-aos="fade-right">
+                <div class="skill-group-header">
+                    <i class="fas fa-tools"></i>
+                    <h3>برامج التصميم</h3>
                 </div>
                 <div class="skill-item">
-                    <span class="skill-name">Adobe Illustrator</span>
-                    <div class="skill-bar">
-                        <div class="skill-progress width-90"></div>
+                    <div class="skill-info">
+                        <span class="skill-name">Adobe Photoshop</span>
+                        <span class="skill-percentage">95%</span>
                     </div>
-                    <span class="skill-percentage">100%</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="95"></div>
+                    </div>
                 </div>
                 <div class="skill-item">
-                    <span class="skill-name">Adobe InDesign</span>
-                    <div class="skill-bar">
-                        <div class="skill-progress width-85"></div>
+                    <div class="skill-info">
+                        <span class="skill-name">Adobe Illustrator</span>
+                        <span class="skill-percentage">100%</span>
                     </div>
-                    <span class="skill-percentage">100%</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="100"></div>
+                    </div>
                 </div>
                 <div class="skill-item">
-                    <span class="skill-name">Canva</span>
-                    <div class="skill-bar">
-                        <div class="skill-progress width-80"></div>
+                    <div class="skill-info">
+                        <span class="skill-name">Adobe InDesign</span>
+                        <span class="skill-percentage">100%</span>
                     </div>
-                    <span class="skill-percentage">100%</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="100"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">Canva</span>
+                        <span class="skill-percentage">100%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="100"></div>
+                    </div>
                 </div>
             </div>
-            <div class="skill-group">
-                <h3>مهارات التصميم</h3>
-                <div class="skill-item">
-                    <span class="skill-name">تصميم الشعارات</span>
-                    <div class="skill-bar">
-                        <div class="skill-progress width-95"></div>
-                    </div>
-                    <span class="skill-percentage">95%</span>
+            <div class="skill-group" data-aos="fade-left">
+                <div class="skill-group-header">
+                    <i class="fas fa-palette"></i>
+                    <h3>مهارات التصميم</h3>
                 </div>
                 <div class="skill-item">
-                    <span class="skill-name">الهوية البصرية</span>
-                    <div class="skill-bar">
-                        <div class="skill-progress width-90"></div>
+                    <div class="skill-info">
+                        <span class="skill-name">تصميم الشعارات</span>
+                        <span class="skill-percentage">95%</span>
                     </div>
-                    <span class="skill-percentage">90%</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="95"></div>
+                    </div>
                 </div>
                 <div class="skill-item">
-                    <span class="skill-name">تصميم المطبوعات</span>
-                    <div class="skill-bar">
-                        <div class="skill-progress width-85"></div>
+                    <div class="skill-info">
+                        <span class="skill-name">الهوية البصرية</span>
+                        <span class="skill-percentage">90%</span>
                     </div>
-                    <span class="skill-percentage">85%</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="90"></div>
+                    </div>
                 </div>
                 <div class="skill-item">
-                    <span class="skill-name">تصميم وسائل التواصل</span>
-                    <div class="skill-bar">
-                        <div class="skill-progress width-90"></div>
+                    <div class="skill-info">
+                        <span class="skill-name">تصميم المطبوعات</span>
+                        <span class="skill-percentage">85%</span>
                     </div>
-                    <span class="skill-percentage">90%</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="85"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">تصميم وسائل التواصل</span>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="90"></div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="testimonials" class="testimonials-section" data-aos="fade-up">
-        <h2 class="section-title">آراء العملاء</h2>
+        <div class="section-header">
+            <span class="section-badge">تقييمات العملاء</span>
+            <h2 class="section-title">آراء العملاء</h2>
+            <p class="section-description">ما يقوله عملائي عن تجربتهم معي</p>
+        </div>
         <div class="testimonials-container">
             <div class="testimonial-card" data-aos="fade-right">
+                <div class="testimonial-header">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
                 <div class="testimonial-content">
-                    <i class="fas fa-quote-right testimonial-quote"></i>
-                    <p>تعاملت مع عبدالله في تصميم شعار وهوية بصرية، وكانت التجربة رائعة. فهم احتياجاتي بسرعة وقدم تصاميم مميزة   .</p>
+                    <p>تعاملت مع عبدالله في تصميم شعار وهوية بصرية، وكانت التجربة رائعة. فهم احتياجاتي بسرعة وقدم تصاميم مميزة.</p>
                 </div>
                 <div class="testimonial-author">
                     <img src="it.jpeg" alt="Client 1" class="testimonial-avatar">
                     <div class="testimonial-info">
                         <h4>محمد العلي</h4>
                         <p>مشروع منزلي</p>
-                        <div class="testimonial-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
+                        <div class="client-badge">عميل مميز</div>
                     </div>
                 </div>
             </div>
-            <div class="testimonial-card" data-aos="fade-up">
+            <div class="testimonial-card featured" data-aos="fade-up">
+                <div class="testimonial-header">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
                 <div class="testimonial-content">
-                    <i class="fas fa-quote-right testimonial-quote"></i>
                     <p>أنصح بالتعامل مع عبدالله لأي عمل تصميمي. قام بتصميم بروشورات ومنشورات لمتجري الإلكتروني بشكل احترافي وبأسعار مناسبة.</p>
                 </div>
                 <div class="testimonial-author">
@@ -258,19 +451,24 @@
                     <div class="testimonial-info">
                         <h4>سارة الأحمد</h4>
                         <p>صاحبة متجر إلكتروني</p>
-                        <div class="testimonial-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
+                        <div class="client-badge">عميل مميز</div>
                     </div>
                 </div>
             </div>
             <div class="testimonial-card" data-aos="fade-left">
+                <div class="testimonial-header">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
                 <div class="testimonial-content">
-                    <i class="fas fa-quote-right testimonial-quote"></i>
                     <p>تعاملت مع عبدالله في عدة مشاريع، وكان دائمًا ملتزمًا بالمواعيد ويقدم أفكارًا إبداعية. أنصح به بشدة لأي عمل تصميمي.</p>
                 </div>
                 <div class="testimonial-author">
@@ -278,13 +476,7 @@
                     <div class="testimonial-info">
                         <h4>أحمد الناصر</h4>
                         <p>صاحب مطعم</p>
-                        <div class="testimonial-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                        </div>
+                        <div class="client-badge">عميل مميز</div>
                     </div>
                 </div>
             </div>
@@ -292,87 +484,171 @@
     </section>
 
     <section id="contact" class="contact-section" data-aos="fade-up">
-        <h2 class="section-title">تواصل معي</h2>
+        <div class="section-header">
+            <span class="section-badge">تواصل معي</span>
+            <h2 class="section-title">لنبدأ مشروعك</h2>
+            <p class="section-description">أحب سماع أفكارك الجديدة ومساعدتك في تحقيقها</p>
+        </div>
         <div class="contact-container">
-            <div class="contact-info">
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <p>البريد الإلكتروني: <a href="mailto:contact@abdullahalbaharna.com">albaharnah.1420@gmail.com</a></p>
+            <div class="contact-info" data-aos="fade-right">
+                <div class="contact-card">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>البريد الإلكتروني</h4>
+                            <p><a href="mailto:albaharnah.1420@gmail.com">albaharnah.1420@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>الهاتف</h4>
+                            <p><a href="tel:+966593496551">966593496551</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>الموقع</h4>
+                            <p>المملكة العربية السعودية | القطيف</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="contact-item">
-                    <i class="fas fa-phone"></i>
-                    <p>الهاتف: <a href="tel:+966593496551">966593496551</a></p>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <p>الموقع:المملكة العربية السعودية | الدمام</p>
+                <div class="availability-card">
+                    <div class="availability-status">
+                        <div class="status-indicator online"></div>
+                        <span>متاح للعمل</span>
+                    </div>
+                    <p>أستجيب عادة خلال ساعة واحدة</p>
                 </div>
             </div>
-            <div class="contact-form">
+            <div class="contact-form" data-aos="fade-left">
                 <form id="contactForm">
-                    <div class="form-group">
-                        <label for="name">الاسم</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">البريد الإلكتروني</label>
-                        <input type="email" id="email" name="email" required>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">الاسم الكامل</label>
+                            <input type="text" id="name" name="name" required>
+                            <i class="fas fa-user form-icon"></i>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">البريد الإلكتروني</label>
+                            <input type="email" id="email" name="email" required>
+                            <i class="fas fa-envelope form-icon"></i>
+                        </div>
                     </div>
                     <div class="form-group">
                         <label for="subject">رقم الجوال</label>
                         <input type="text" id="subject" name="subject" required>
+                        <i class="fas fa-phone form-icon"></i>
                     </div>
                     <div class="form-group">
-                        <label for="message">الرسالة</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <label for="message">تفاصيل المشروع</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="أخبرني عن مشروعك وما تحتاجه..."></textarea>
+                        <i class="fas fa-comment form-icon"></i>
                     </div>
-                    <button type="submit" class="cta-button">إرسال الرسالة</button>
+                    <button type="submit" class="cta-button primary-btn full-width">
+                        <i class="fas fa-paper-plane"></i>
+                        إرسال الرسالة
+                    </button>
                 </form>
             </div>
         </div>
     </section>
 
     <section class="cta-section" data-aos="fade-up">
+        <div class="cta-background">
+            <div class="cta-pattern"></div>
+        </div>
         <div class="cta-content">
+            <div class="cta-icon">
+                <i class="fas fa-rocket"></i>
+            </div>
             <h2>هل أنت جاهز لبدء مشروعك؟</h2>
-            <p>دعنا نعمل معًا لتحويل أفكارك إلى تصاميم مميزة</p>
-            <a href="https://forms.gle/QkCg6KbVcHXnXZ4n7" class="cta-button">طلب تصميم الآن</a>
+            <p>دعنا نعمل معًا لتحويل أفكارك إلى تصاميم مميزة تجذب العملاء وتحقق أهدافك</p>
+            <div class="cta-buttons">
+                <a href="https://forms.gle/QkCg6KbVcHXnXZ4n7" class="cta-button primary-btn">
+                    <i class="fas fa-star"></i>
+                    طلب تصميم الآن
+                </a>
+                <a href="#contact" class="cta-button secondary-btn">
+                    <i class="fas fa-comments"></i>
+                    تحدث معي أولاً
+                </a>
+            </div>
         </div>
     </section>
 
     <footer>
         <div class="footer-content">
-            <div class="footer-logo">
-                <h3>Abdullah AlBaharna</h3>
-                <p>AMB DESIGNER</p>
-            </div>
-            <div class="footer-links">
-                <h4>روابط سريعة</h4>
-                <ul>
-                    <li><a href="#services">خدماتي</a></li>
-                    <li><a href="#works">أعمالي</a></li>
-                    <li><a href="#skills">مهاراتي</a></li>
-                    <li><a href="#testimonials">آراء العملاء</a></li>
-                    <li><a href="#contact">تواصل معي</a></li>
-                </ul>
-            </div>
-            <div class="footer-social">
-                <h4>تابعني على</h4>
-                <div class="social-icons">
-                    <a href="https://t.me/PdcastwithAbdullah" aria-label="Telegram" class="social-icon"><i class="fab fa-telegram"></i></a>
-                    <a href="https://www.instagram.com/ambdesign1420?igsh=MXlmNGIwczd2Ymt2" aria-label="Instagram" class="social-icon"><i class="fab fa-instagram"></i></a>
-                    <a href="https://soundcloud.com/pdcastwithabdullah" aria-label="SoundCloud" class="social-icon"><i class="fab fa-soundcloud"></i></a>
-                    <a href="https://www.snapchat.com/add/abood_qatif2019" aria-label="Snapchat" class="social-icon"><i class="fab fa-snapchat"></i></a>
-                    <a href="https://api.whatsapp.com/send?phone=966593496551" aria-label="WhatsApp" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+            <div class="footer-main">
+                <div class="footer-logo">
+                    <h3>Abdullah AlBaharna</h3>
+                    <p>AMB DESIGNER</p>
+                    <div class="footer-description">
+                        <p>مصمم محترف متخصص في تصميم الهويات البصرية والشعارات والمطبوعات</p>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="#services"><i class="fas fa-chevron-left"></i>خدماتي</a></li>
+                        <li><a href="#works"><i class="fas fa-chevron-left"></i>أعمالي</a></li>
+                        <li><a href="#skills"><i class="fas fa-chevron-left"></i>مهاراتي</a></li>
+                        <li><a href="#testimonials"><i class="fas fa-chevron-left"></i>آراء العملاء</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-left"></i>تواصل معي</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h4>خدماتي</h4>
+                    <ul>
+                        <li><i class="fas fa-paint-brush"></i>تصميم الشعارات</li>
+                        <li><i class="fas fa-palette"></i>الهوية البصرية</li>
+                        <li><i class="fas fa-print"></i>تصميم المطبوعات</li>
+                        <li><i class="fas fa-mobile-alt"></i>تصميم وسائل التواصل</li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>تابعني على</h4>
+                    <div class="social-icons">
+                        <a href="https://t.me/PdcastwithAbdullah" target="_blank" rel="noopener" aria-label="Telegram" class="social-icon telegram"><i class="fab fa-telegram"></i></a>
+                        <a href="https://www.instagram.com/ambdesign1420?igsh=MXlmNGIwczd2Ymt2" target="_blank" rel="noopener" aria-label="Instagram" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.snapchat.com/add/abood_qatif2019" target="_blank" rel="noopener" aria-label="Snapchat" class="social-icon snapchat"><i class="fab fa-snapchat"></i></a>
+                        <a href="https://api.whatsapp.com/send?phone=966593496551" target="_blank" rel="noopener" aria-label="WhatsApp" class="social-icon whatsapp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                    <div class="footer-contact-quick">
+                        <a href="https://forms.gle/QkCg6KbVcHXnXZ4n7" class="quick-order-btn">
+                            <i class="fas fa-plus"></i>
+                            طلب سريع
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
-            <p id="currentTime"></p>
-            <span>&copy; جميع الحقوق محفوظة 2025 | Abdullah AlBaharna</span>
+            <div class="footer-bottom-content">
+                <div class="footer-time">
+                    <!-- <i class="fas fa-clock"></i> -->
+                    <!-- <span id="currentTime"></span> -->
+                </div>
+                <div class="footer-copyright">
+                    <span>&copy;Powered by | +966578661535</span>
+                </div>
+                <div class="footer-made-with">
+                    <span>صُنع بـ</span>
+                    <i class="fas fa-heart"></i>
+                    <span>في السعودية</span>
+                </div>
+            </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
 </body>
+        <script src="script.js"></script>
+
 </html>

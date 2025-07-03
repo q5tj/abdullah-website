@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>contact</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="contact.css" />
+  <link rel="icon" type="image/png" href="logo-removebg-preview.png" />
+</head>
+<body>
+
+  <section id="contact" class="section-contact" data-aos="fade-up">
+    <h2 class="title-contact">تواصل معي</h2>
+    <div class="container-contact">
+      <div class="info-contact">
+        <div class="item-contact">
+          <i class="fas fa-envelope"></i>
+          <p>البريد الإلكتروني: 
+            <a href="mailto:contact@abdullahalbaharna.com">albaharnah.1420@gmail.com</a>
+          </p>
+        </div>
+        <div class="item-contact">
+          <i class="fas fa-phone"></i>
+          <p>الهاتف: <a href="tel:+966593496551">966593496551</a></p>
+        </div>
+        <div class="item-contact">
+          <i class="fas fa-map-marker-alt"></i>
+          <p>الموقع: المملكة العربية السعودية | القطيف</p>
+        </div>
+      </div>
+      <div class="form-contact">
+        <form id="contactForm">
+          <div class="group-form">
+            <label for="name">الاسم</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="group-form">
+            <label for="email">البريد الإلكتروني</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="group-form">
+            <label for="subject">رقم الجوال</label>
+            <input type="text" id="subject" name="subject" required />
+          </div>
+          <div class="group-form">
+            <label for="message">الرسالة</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="button-send">إرسال الرسالة</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script src="contact.js" defer></script>
+</body>
+</html>
