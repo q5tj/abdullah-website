@@ -12,10 +12,6 @@ document.addEventListener("DOMContentLoaded", () => {
     console.warn("AOS is not defined. Make sure AOS library is included.");
   }
 
-  // Set current time in footer
-  updateTime();
-  setInterval(updateTime, 1000);
-
   // Check for saved theme preference
   const savedTheme = localStorage.getItem("theme");
   if (savedTheme === "dark") {
@@ -76,26 +72,6 @@ function updateDarkModeIcon(isDark) {
     icon.classList.remove("fa-sun");
     icon.classList.add("fa-moon");
   }
-}
-
-// Update time in footer
-function updateTime() {
-  const timeElement = document.getElementById("currentTime");
-  const now = new Date();
-
-  // Format for Arabic locale
-  const options = {
-    weekday: "long",
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-    hour: "2-digit",
-    minute: "2-digit",
-    second: "2-digit",
-    hour12: true,
-  };
-
-  timeElement.textContent = now.toLocaleString("ar-SA", options);
 }
 
 // Initialize portfolio filter
